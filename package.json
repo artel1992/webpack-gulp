@@ -36,6 +36,7 @@
   "dependencies": {
     "boxicons": "^2.1.2",
     "file-loader": "^6.2.0",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-debug": "^4.0.0",
     "gulp-notify": "^4.0.0",
