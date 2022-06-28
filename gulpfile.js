@@ -27,14 +27,10 @@ const webpackTask = () =>
         .pipe(named())
         .pipe(webpackStream(webpackConfig(), webpack))
         .pipe(gulp.dest('./dist-gulp'))
-gulp.task('sass', sassTask)
-gulp.task('assets',)
 
-gulp.task('wp', webpackTask
-)
-gulp.task('default', gulp.parallel(
-    webpackTask,
-    sassTask,
-    assetsTask
-))
+gulp.task('sass', sassTask)
+gulp.task('assets')
+gulp.task('webpack', webpackTask)
+
+gulp.task('default', gulp.parallel(webpackTask, sassTask, assetsTask))
 
