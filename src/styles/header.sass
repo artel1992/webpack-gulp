@@ -1,0 +1,108 @@
+$nav-link-border: 0
+.header
+  height: 10vh
+  display: flex
+  justify-content: space-between
+  align-items: stretch
+  padding: 0 3rem
+  border-bottom: 2px solid $light-gray
+
+
+  .search
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    width: 100%
+
+    .search-panel
+      border-width: 1px
+      border-style: solid
+      border-color: $light-gray
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 8px
+      overflow: hidden
+      padding: 8px 4px
+      transition: border-color .1s ease
+
+      &:focus-within
+        border-color: $primary
+
+    .search-btn
+      font-size: 26px
+      color: $gray
+      cursor: pointer
+      transition: color .1s ease
+
+    .search-input
+      font-size: 18px
+      width: 25vw
+
+      &::placeholder
+        transition: color .1s ease
+
+      &:focus
+        & + .search-btn
+          color: $primary
+
+        &::placeholder
+          color: $light-gray
+
+  .nav-menu
+    min-width: 25%
+    display: flex
+    justify-content: center
+    align-items: stretch
+
+    .nav-link
+      vertical-align: middle
+      line-height: 100%
+      display: flex
+      align-items: center
+      padding: 0 4px
+      text-decoration: none
+      color: $gray
+      text-transform: uppercase
+      font-family: Bahnschrift, serif
+      font-weight: 300
+      border-bottom: $nav-link-border solid $gray
+
+      &:hover
+        color: $dark-gray
+        border-bottom: $nav-link-border solid $dark-gray
+
+      &.active
+        color: $primary
+        border-bottom: $nav-link-border solid $primary
+
+        &:hover
+          border-bottom: $nav-link-border solid $primary
+
+  .avatar
+    display: flex
+    align-items: center
+    cursor: pointer
+    position: relative
+
+    img
+      width: 3rem
+      height: 3rem
+      border-radius: 3rem
+      object-fit: cover
+
+    .dropmenu
+      height: 20px
+      width: 150px
+      background-color: $primary
+      position: fixed
+
+    .dropmenu-toggle
+      &:checked
+        background-color: #0c4a6e
+
+
+
+
+
+
