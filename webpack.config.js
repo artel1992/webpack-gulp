@@ -11,10 +11,11 @@ const stylesHandler = isProduction
     : "style-loader"
 
 const config = {
-    // entry: {
-    //     main: "./src/index.ts",
-    //     vendor: ['boxicons']
-    // },
+    entry: {
+        main: "./src/entry.ts",
+        vendor: ['boxicons']
+    },
+    output:{assetModuleFilename: 'assets/[hash][ext][query]'},
     devServer: {
         open: true,
         host: "localhost",
@@ -52,8 +53,8 @@ const config = {
                 }
             },
             {
-                test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-                type: "asset",
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
             },
         ],
     },

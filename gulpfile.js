@@ -16,8 +16,9 @@ const sassTask = () =>
         .pipe(autoprefixer())
         .pipe(concat('styles.css'))
         .pipe(gulp.dest('dist-gulp/css'))
+
 const webpackTask = () =>
-    gulp.src(['./src/**/*.{js,ts}'])
+    gulp.src(['./src/**/index.{js,ts}'])
         .pipe(plumber({
             errorHandler: notify.onError(err => ({
                 title: 'Webpack',
@@ -32,5 +33,5 @@ gulp.task('sass', sassTask)
 gulp.task('assets')
 gulp.task('webpack', webpackTask)
 
-gulp.task('default', gulp.parallel(webpackTask, sassTask, assetsTask))
+gulp.task('default', gulp.parallel(webpackTask, assetsTask))
 
