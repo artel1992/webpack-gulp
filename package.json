@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "boxicons": "^2.1.2",
+    "browser-sync": "^2.27.10",
     "file-loader": "^6.2.0",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",

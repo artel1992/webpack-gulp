@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8"/>
     <title>Profile</title>
-    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <div class="page">
@@ -47,69 +46,7 @@
         </header>
         <main class="content">
             <section>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium amet aperiam, asperiores
-                assumenda commodi debitis dolorem ea error in iure laudantium magni quasi qui reiciendis repellendus
-                sint
-                voluptas voluptatum?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolores ullam voluptatem. Cum, debitis
-                esse
-                et, illo, impedit ipsam iusto magni modi nihil odio omnis possimus provident quisquam quod totam!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet blanditiis, dignissimos dolore
-                dolores ea excepturi laudantium perspiciatis porro reprehenderit repudiandae, rerum similique tempora
-                velit
-                voluptatum? Debitis modi officia praesentium!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam at beatae consequuntur
-                cupiditate
-                dicta eius eveniet ex ipsa laborum, magnam omnis perspiciatis quis rem repellat saepe sint, vel
-                voluptates.
-                Lorem ipsum dolor.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eaque in laborum necessitatibus.
-                Architecto
-                consectetur culpa dicta dignissimos, dolores dolorum earum eligendi enim eum facere facilis fugit ipsa
-                iure
-                iusto, magnam minima molestias mollitia nam necessitatibus nemo nisi odio porro quia rerum similique sit
-                tempore ullam velit vero voluptas. Ad atque autem distinctio, dolorum earum esse, magni minima optio
-                porro
-                quaerat qui quidem sed vero. Alias at beatae consectetur cumque deleniti deserunt, enim ex maiores
-                minima
-                natus numquam odit officiis omnis perferendis quas quibusdam quo soluta, suscipit. Aliquid architecto
-                asperiores at distinctio facilis neque nesciunt porro quo sit veniam. Dolor explicabo id modi officia
-                placeat, porro qui repellat suscipit! Ab ad autem blanditiis consequuntur dicta dignissimos dolor,
-                dolorem
-                doloremque ducimus eius enim error esse est et eveniet fugit id illo impedit incidunt labore laborum
-                libero
-                maxime modi molestiae nesciunt non placeat possimus quia quis quod ratione repellat repellendus
-                repudiandae
-                similique sint, veniam voluptatum. Alias aliquam commodi ducimus eaque enim est excepturi fugiat
-                molestias
-                nisi numquam obcaecati omnis placeat quod, totam voluptas. Adipisci consequatur facere ipsum
-                necessitatibus
-                obcaecati possimus quaerat, quidem quo sed soluta. Harum hic id illum incidunt itaque minus molestiae
-                repudiandae soluta tempora voluptatibus! At cum debitis deserunt eius enim error est explicabo ipsum
-                libero,
-                nam necessitatibus nisi nulla officiis omnis optio quisquam repudiandae sapiente similique unde ut.
-                Accusamus atque consequuntur dolores ex, explicabo inventore magni, non quam, repellat rerum ut
-                voluptate!
-                Aliquid cum cupiditate delectus est facilis, iusto nam odio officia quos similique, totam velit! Ab
-                accusantium ad architecto at atque deleniti doloribus dolorum facere fuga impedit ipsa ipsum labore nam
-                necessitatibus neque nobis nulla omnis, pariatur quaerat, quasi quidem quis reiciendis sequi similique
-                tempore totam voluptatum! Iure mollitia nostrum odio. Ab, accusamus adipisci cupiditate dolorem
-                doloribus
-                ducimus earum eius esse exercitationem iste, rerum temporibus ut voluptate. Deleniti eius iste iure
-                libero
-                necessitatibus quam quod reprehenderit, saepe sit. Ab, accusamus asperiores autem blanditiis consectetur
-                cum
-                deleniti deserunt dicta earum eius eligendi error eum excepturi fugiat hic in incidunt inventore, ipsa
-                iste
-                laboriosam libero maiores molestias nobis officia omnis perferendis porro quasi qui quidem rem sapiente
-                sit
-                temporibus tenetur ullam vero vitae voluptate. Ad alias aliquid consequatur corporis debitis, deserunt
-                dignissimos dolore dolorum earum, enim error et eveniet excepturi exercitationem fuga fugiat id illum
-                ipsa
-                libero magnam mollitia nam nihil numquam obcaecati officia pariatur perspiciatis, praesentium quasi quod
-                repudiandae saepe sapiente sed similique tempore vel vitae voluptatibus? Alias at fugiat harum modi
-                natus
-                nulla odit quod rerum. Cumque dolorum explicabo incidunt ipsum minus obcaecati saepe? Blanditiis
+
                 corporis
                 dignissimos ex, facilis illum labore molestiae nisi quidem repellat saepe. Cumque eos error iure minus
                 quasi! Ea iste maiores nam unde? Accusamus, ea, labore! Corporis dolore eos error facilis maiores nemo
@@ -199,19 +136,25 @@
         </main>
     </div>
 </div>
-</body>
-<script>
-    if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-            navigator.serviceWorker
-                .register("service-worker.js")
-                .then((registration) => {
-                    console.log("Service Worker registered: ", registration);
-                })
-                .catch((registrationError) => {
-                    console.error("Service Worker registration failed: ", registrationError);
-                });
-        });
-    }
+<script id="__bs_script__">
+    console.log('BSSCRIPT')
+    //<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.27.10'><\/script>".replace("HOST", location.hostname));
+    //]]>
 </script>
+</body>
+<!--<script>-->
+<!--    if ("serviceWorker" in navigator) {-->
+<!--        window.addEventListener("load", () => {-->
+<!--            navigator.serviceWorker-->
+<!--                .register("service-worker.js")-->
+<!--                .then((registration) => {-->
+<!--                    console.log("Service Worker registered: ", registration);-->
+<!--                })-->
+<!--                .catch((registrationError) => {-->
+<!--                    console.error("Service Worker registration failed: ", registrationError);-->
+<!--                });-->
+<!--        });-->
+<!--    }-->
+<!--</script>-->
 </html>
